@@ -49,5 +49,8 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_ENABLE_BLUR := true
 
+# Display
+TARGET_SCREEN_DENSITY := 400
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/lisa/lisa-vendor.mk)
