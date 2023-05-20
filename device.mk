@@ -42,5 +42,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     vendor.sys.video.disable.ubwc=1
 
+# Miscellaneous
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/lisa/lisa-vendor.mk)
