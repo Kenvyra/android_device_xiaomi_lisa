@@ -12,6 +12,10 @@ include device/xiaomi/sm8350-common/BoardConfigCommon.mk
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := lisa
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_lisa
+TARGET_RECOVERY_DEVICE_MODULES := libinit_lisa
+
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/lisa_QGKI.config
 
